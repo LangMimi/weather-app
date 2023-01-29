@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+    margin: 50px auto;
+    max-width: 400px;
+    width: 100%;
+    background: #F5F5F5;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+/* HEADER STYLING */
+.wrapper header{
+    background: #DDCC34;
+    padding: 1rem 0 1rem 1.5rem;
+}
+
+.wrapper header h2{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+/* CONTENT STYLING */
+
+.content__search-header{
+    display:flex;
+    position: relative;
+}
+
+.content__search-header input{
+    padding: .875rem 1rem;
+    width: 100%;
+    margin: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+.content__search-header button{
+    position: absolute;
+    right: 4%;
+    top: 20%;
+    padding: .875rem 1.5rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #808080;
+    color: #fff;
+}
+
+.content__weather{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+    display: none;
+}
+
+.content__weather .location{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.weather-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.temp{
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.temp p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #5E5151;
+}
+
+.more-weather-info{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid #DDCC34;
+    display: none;
+}
+
+.more-weather-info p{
+    color: #211f1f;
+}
+
+.feels_like, .humidity{
+    margin: 1rem 0;
+}
+
+.line{
+    border-left: 1px solid #DDCC34;
+}
+
+/* weather-message */
+
+.weather-message .errMessage{
+    margin: 1rem 1.5rem 2rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(222, 23, 23);
+}

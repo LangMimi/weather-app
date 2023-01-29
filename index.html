@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/8a683e8afc.js" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="app.js" defer></script>
+</head>
+<body onload="requestApi('cebu')">
+    <div class="wrapper">
+        <header>
+            <h2>Weather App</h2>
+        </header>
+
+        <div class="content">
+            <div class="content__search-header">
+                <input type="text" placeholder="Enter city name" id="cityInput">
+                <button id="searchBtn">Search</button>
+            </div>
+            
+            <div class="weather-message">
+                <h2 class="errMessage"></h2>
+            </div>
+
+            <div class="content__weather">
+                <div class="location">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span class="locationEntered">London</span>
+                </div>
+
+                <div class="weather-details">
+                    <img src="#" alt="" style="width: 136px; height: 136px;">
+                    <div class="temp">
+                        <span class="temp-value">13</span>
+                        <span class="deg">°</span>C
+                        <p class="weather-description">Broken Clouds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-weather-info">
+                <div class="feels_like">
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <span class="fl-value">23</span>
+                    <span class="deg">°</span>C
+                    <p>Feels like</p>
+                </div>
+                <span class="line"></span>
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span class="humidity-value">23</span>%
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
